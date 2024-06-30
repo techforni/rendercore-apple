@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64C6B0E62C30250400BD260F /* Test_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B0E52C30250400BD260F /* Test_AppApp.swift */; };
-		64C6B0E82C30250400BD260F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B0E72C30250400BD260F /* ContentView.swift */; };
-		64C6B0EA2C30250600BD260F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C6B0E92C30250600BD260F /* Assets.xcassets */; };
+		643AEB8A2C30485800C19A58 /* BufferClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643AEB892C30485800C19A58 /* BufferClasses.swift */; };
+		64499B192C30DE7100F204EC /* RenderPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64499B182C30DE7100F204EC /* RenderPipeline.swift */; };
+		6459EFA42C3097CE00DAD2DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6459EFA32C3097CE00DAD2DD /* Assets.xcassets */; };
+		64C6B0E62C30250400BD260F /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B0E52C30250400BD260F /* TestApp.swift */; };
+		64C6B0E82C30250400BD260F /* GameCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B0E72C30250400BD260F /* GameCycle.swift */; };
 		64C6B0EE2C30250600BD260F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C6B0ED2C30250600BD260F /* Preview Assets.xcassets */; };
 		64C6B0F22C30252800BD260F /* RenderCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C6B0D82C3024ED00BD260F /* RenderCore.framework */; };
 		64C6B0F32C30252800BD260F /* RenderCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64C6B0D82C3024ED00BD260F /* RenderCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -17,6 +19,13 @@
 		64C6B0F92C30253400BD260F /* MetalKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 869B8F182C2ED2CA000071FD /* MetalKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		64C6B0FC2C30255800BD260F /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C6B0FB2C30255800BD260F /* GameController.framework */; };
 		64C6B0FF2C3027D800BD260F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B0FE2C3027D800BD260F /* Application.swift */; };
+		64C6B1012C302FE900BD260F /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B1002C302FE900BD260F /* Instance.swift */; };
+		64C6B1032C3034DC00BD260F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6B1022C3034DC00BD260F /* Color.swift */; };
+		64CA257E2C30BB1800F48FDC /* RGBAShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64CA257D2C30BB1800F48FDC /* RGBAShader.metal */; };
+		64CA257F2C30BB1800F48FDC /* RGBAShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64CA257D2C30BB1800F48FDC /* RGBAShader.metal */; };
+		64CA25802C30BDAA00F48FDC /* EngineShaders.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 64CA256C2C30BADE00F48FDC /* EngineShaders.metallib */; platformFilter = ios; };
+		64CA25812C30BDAA00F48FDC /* EngineShaders.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 64CA25752C30BAF400F48FDC /* EngineShaders.metallib */; platformFilters = (macos, ); };
+		64DC3E232C3166F700DC605A /* EngineShaders.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 64CA25752C30BAF400F48FDC /* EngineShaders.metallib */; platformFilters = (macos, ); };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 64C6B0D72C3024ED00BD260F;
 			remoteInfo = RenderAPI;
+		};
+		64CA25822C30BDBA00F48FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 869B8EE72C2ED258000071FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CA256B2C30BADE00F48FDC;
+			remoteInfo = "iOS ES";
+		};
+		64CA25842C30BDBA00F48FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 869B8EE72C2ED258000071FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CA25742C30BAF400F48FDC;
+			remoteInfo = "macOS ES";
+		};
+		64DC3E242C31670900DC605A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 869B8EE72C2ED258000071FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CA256B2C30BADE00F48FDC;
+			remoteInfo = "iOS ES";
+		};
+		64DC3E262C31670900DC605A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 869B8EE72C2ED258000071FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CA25742C30BAF400F48FDC;
+			remoteInfo = "macOS ES";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,15 +92,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		643AEB892C30485800C19A58 /* BufferClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferClasses.swift; sourceTree = "<group>"; };
+		64499B182C30DE7100F204EC /* RenderPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipeline.swift; sourceTree = "<group>"; };
+		6459EFA32C3097CE00DAD2DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C6B0D82C3024ED00BD260F /* RenderCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RenderCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C6B0E32C30250400BD260F /* Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64C6B0E52C30250400BD260F /* Test_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AppApp.swift; sourceTree = "<group>"; };
-		64C6B0E72C30250400BD260F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		64C6B0E92C30250600BD260F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64C6B0E52C30250400BD260F /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
+		64C6B0E72C30250400BD260F /* GameCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCycle.swift; sourceTree = "<group>"; };
 		64C6B0EB2C30250600BD260F /* Test_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test_App.entitlements; sourceTree = "<group>"; };
 		64C6B0ED2C30250600BD260F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64C6B0FB2C30255800BD260F /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
 		64C6B0FE2C3027D800BD260F /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		64C6B1002C302FE900BD260F /* Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instance.swift; sourceTree = "<group>"; };
+		64C6B1022C3034DC00BD260F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		64CA256C2C30BADE00F48FDC /* EngineShaders.metallib */ = {isa = PBXFileReference; explicitFileType = "archive.metal-library"; includeInIndex = 0; path = EngineShaders.metallib; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CA25752C30BAF400F48FDC /* EngineShaders.metallib */ = {isa = PBXFileReference; explicitFileType = "archive.metal-library"; includeInIndex = 0; path = EngineShaders.metallib; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CA257D2C30BB1800F48FDC /* RGBAShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RGBAShader.metal; sourceTree = "<group>"; };
 		869B8F182C2ED2CA000071FD /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -88,10 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643AEB882C30479A00C19A58 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				643AEB892C30485800C19A58 /* BufferClasses.swift */,
+				64499B182C30DE7100F204EC /* RenderPipeline.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		64C6B0D92C3024ED00BD260F /* RenderAPI */ = {
 			isa = PBXGroup;
 			children = (
+				64CA257C2C30BB0100F48FDC /* shaders */,
+				643AEB882C30479A00C19A58 /* resources */,
 				64C6B0FD2C3027C100BD260F /* core */,
+				64C6B1022C3034DC00BD260F /* Color.swift */,
 			);
 			path = RenderAPI;
 			sourceTree = "<group>";
@@ -99,9 +155,9 @@
 		64C6B0E42C30250400BD260F /* Test App */ = {
 			isa = PBXGroup;
 			children = (
-				64C6B0E52C30250400BD260F /* Test_AppApp.swift */,
-				64C6B0E72C30250400BD260F /* ContentView.swift */,
-				64C6B0E92C30250600BD260F /* Assets.xcassets */,
+				6459EFA32C3097CE00DAD2DD /* Assets.xcassets */,
+				64C6B0E52C30250400BD260F /* TestApp.swift */,
+				64C6B0E72C30250400BD260F /* GameCycle.swift */,
 				64C6B0EB2C30250600BD260F /* Test_App.entitlements */,
 				64C6B0EC2C30250600BD260F /* Preview Content */,
 			);
@@ -120,8 +176,17 @@
 			isa = PBXGroup;
 			children = (
 				64C6B0FE2C3027D800BD260F /* Application.swift */,
+				64C6B1002C302FE900BD260F /* Instance.swift */,
 			);
 			path = core;
+			sourceTree = "<group>";
+		};
+		64CA257C2C30BB0100F48FDC /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				64CA257D2C30BB1800F48FDC /* RGBAShader.metal */,
+			);
+			path = shaders;
 			sourceTree = "<group>";
 		};
 		869B8EE62C2ED258000071FD = {
@@ -139,6 +204,8 @@
 			children = (
 				64C6B0D82C3024ED00BD260F /* RenderCore.framework */,
 				64C6B0E32C30250400BD260F /* Test App.app */,
+				64CA256C2C30BADE00F48FDC /* EngineShaders.metallib */,
+				64CA25752C30BAF400F48FDC /* EngineShaders.metallib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +245,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				64CA25832C30BDBA00F48FDC /* PBXTargetDependency */,
+				64CA25852C30BDBA00F48FDC /* PBXTargetDependency */,
 			);
 			name = RenderAPI;
 			productName = RenderAPI;
@@ -196,12 +265,44 @@
 			buildRules = (
 			);
 			dependencies = (
+				64DC3E252C31670900DC605A /* PBXTargetDependency */,
+				64DC3E272C31670900DC605A /* PBXTargetDependency */,
 				64C6B0F52C30252800BD260F /* PBXTargetDependency */,
 			);
 			name = "Test App";
 			productName = "Test App";
 			productReference = 64C6B0E32C30250400BD260F /* Test App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		64CA256B2C30BADE00F48FDC /* iOS ES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CA25722C30BADE00F48FDC /* Build configuration list for PBXNativeTarget "iOS ES" */;
+			buildPhases = (
+				64CA256A2C30BADE00F48FDC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS ES";
+			productName = "iOS ES";
+			productReference = 64CA256C2C30BADE00F48FDC /* EngineShaders.metallib */;
+			productType = "com.apple.product-type.metal-library";
+		};
+		64CA25742C30BAF400F48FDC /* macOS ES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CA25792C30BAF400F48FDC /* Build configuration list for PBXNativeTarget "macOS ES" */;
+			buildPhases = (
+				64CA25732C30BAF400F48FDC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macOS ES";
+			productName = "macOS ES";
+			productReference = 64CA25752C30BAF400F48FDC /* EngineShaders.metallib */;
+			productType = "com.apple.product-type.metal-library";
 		};
 /* End PBXNativeTarget section */
 
@@ -218,6 +319,12 @@
 						LastSwiftMigration = 1540;
 					};
 					64C6B0E22C30250400BD260F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					64CA256B2C30BADE00F48FDC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					64CA25742C30BAF400F48FDC = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -237,6 +344,8 @@
 			targets = (
 				64C6B0D72C3024ED00BD260F /* RenderAPI */,
 				64C6B0E22C30250400BD260F /* Test App */,
+				64CA256B2C30BADE00F48FDC /* iOS ES */,
+				64CA25742C30BAF400F48FDC /* macOS ES */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64CA25802C30BDAA00F48FDC /* EngineShaders.metallib in Resources */,
+				64CA25812C30BDAA00F48FDC /* EngineShaders.metallib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +364,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DC3E232C3166F700DC605A /* EngineShaders.metallib in Resources */,
+				6459EFA42C3097CE00DAD2DD /* Assets.xcassets in Resources */,
 				64C6B0EE2C30250600BD260F /* Preview Assets.xcassets in Resources */,
-				64C6B0EA2C30250600BD260F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C6B1012C302FE900BD260F /* Instance.swift in Sources */,
 				64C6B0FF2C3027D800BD260F /* Application.swift in Sources */,
+				643AEB8A2C30485800C19A58 /* BufferClasses.swift in Sources */,
+				64499B192C30DE7100F204EC /* RenderPipeline.swift in Sources */,
+				64C6B1032C3034DC00BD260F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +389,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C6B0E82C30250400BD260F /* ContentView.swift in Sources */,
-				64C6B0E62C30250400BD260F /* Test_AppApp.swift in Sources */,
+				64C6B0E82C30250400BD260F /* GameCycle.swift in Sources */,
+				64C6B0E62C30250400BD260F /* TestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CA256A2C30BADE00F48FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CA257E2C30BB1800F48FDC /* RGBAShader.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CA25732C30BAF400F48FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CA257F2C30BB1800F48FDC /* RGBAShader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +417,34 @@
 			isa = PBXTargetDependency;
 			target = 64C6B0D72C3024ED00BD260F /* RenderAPI */;
 			targetProxy = 64C6B0F42C30252800BD260F /* PBXContainerItemProxy */;
+		};
+		64CA25832C30BDBA00F48FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 64CA256B2C30BADE00F48FDC /* iOS ES */;
+			targetProxy = 64CA25822C30BDBA00F48FDC /* PBXContainerItemProxy */;
+		};
+		64CA25852C30BDBA00F48FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				macos,
+			);
+			target = 64CA25742C30BAF400F48FDC /* macOS ES */;
+			targetProxy = 64CA25842C30BDBA00F48FDC /* PBXContainerItemProxy */;
+		};
+		64DC3E252C31670900DC605A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 64CA256B2C30BADE00F48FDC /* iOS ES */;
+			targetProxy = 64DC3E242C31670900DC605A /* PBXContainerItemProxy */;
+		};
+		64DC3E272C31670900DC605A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				macos,
+			);
+			target = 64CA25742C30BAF400F48FDC /* macOS ES */;
+			targetProxy = 64DC3E262C31670900DC605A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -328,7 +488,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = RTSUG9QFR4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -354,7 +514,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -364,7 +524,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -426,7 +586,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = RTSUG9QFR4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -446,7 +606,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -456,7 +616,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -550,11 +710,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -638,11 +798,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -654,6 +814,66 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64CA25702C30BADE00F48FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = EngineShaders;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		64CA25712C30BADE00F48FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = EngineShaders;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		64CA257A2C30BAF400F48FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = EngineShaders;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		64CA257B2C30BAF400F48FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = EngineShaders;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
@@ -686,6 +906,24 @@
 			buildConfigurations = (
 				64C6B0F02C30250600BD260F /* Debug */,
 				64C6B0F12C30250600BD260F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CA25722C30BADE00F48FDC /* Build configuration list for PBXNativeTarget "iOS ES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CA25702C30BADE00F48FDC /* Debug */,
+				64CA25712C30BADE00F48FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CA25792C30BAF400F48FDC /* Build configuration list for PBXNativeTarget "macOS ES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CA257A2C30BAF400F48FDC /* Debug */,
+				64CA257B2C30BAF400F48FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
